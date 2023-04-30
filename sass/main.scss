@@ -1,8 +1,34 @@
+// .link:hover{
+//      color: red !important;
+// }
+  .height{
+    height: 550px !important;
+  }
+  .bottom-margin{
+    margin-bottom: 100px !important;
+  }
+  
 $card-border-radius: 10px;
 $theme-colors: (
-  "sunnycolor":  red,
+  "katrina":  rgb(21, 0, 255),
+  "usainbolt":  rgb(0, 0, 0),
+  "blue":  rgb(53, 36, 233),
+  "white":  rgb(255, 255, 255),
+  "teal": rgb(72, 126, 126),
+  "yellove": rgb(137, 196, 11),
+  "backteal": teal,
+  "purple":purple,
+
+
+  
+
+
+
+  
   
 );
+// $input-focus-border-color:rgb(15, 220, 15);
+// $input-border-color:rgb(15, 220, 15);
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'

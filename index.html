@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,121 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-blue navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bolder" href="#">PHCSQUARE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active ">DASHBOARD</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <!-- <button class="btn btn-outline-white" type="submit">Search</button> -->
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-white" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        LOGIN
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <!-- <h1 class="text-primary">sentiment welcome back again to btc</h1> -->
-    <div class="container">
-        <div class="row justify-content-center m-5">
-            <div class="col-md-5">
-                <div class="card card-curve">
-                    <img src="https://source.unsplash.com/1600x800/?india" class="card-img-top img-curve" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-sunnycolor">Go somewhere</a>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://source.unsplash.com/1600x800/?motivation" class="d-block w-100 image-fluid height" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white bottom-margin">
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eaque commodi, molestias sequi debitis quaerat!</h4>
+              <button class="btn btn-yellove fw-bolder px-5">HOME</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://source.unsplash.com/1600x800/?motivation" class="d-block w-100 image-fluid height" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white bottom-margin">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eaque commodi, molestias sequi debitis quaerat!</h4>
+                <button class="btn btn-yellove fw-bolder px-5">ABOUT</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://source.unsplash.com/1600x800/?motivation" class="d-block w-100 image-fluid height" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white bottom-margin">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eaque commodi, molestias sequi debitis quaerat!</h4>
+                <button class="btn btn-yellove fw-bolder px-5">DASHBOARD</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-backteal">
+                <div class="modal-header">
+                    <h1 class=" text-purple">WELCOME BACK</h1>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
                     </div>
-                  </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-blue" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-blue">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
+
 </html>
